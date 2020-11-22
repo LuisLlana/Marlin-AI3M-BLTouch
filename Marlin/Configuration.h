@@ -226,6 +226,9 @@
 // For the other hotends it is their distance from the extruder 0 hotend.
 //#define HOTEND_OFFSET_X {0.0, 20.00} // (in mm) for each extruder, offset of the hotend on the X axis
 //#define HOTEND_OFFSET_Y {0.0, 5.00}  // (in mm) for each extruder, offset of the hotend on the Y axis
+#define HOTEND_OFFSET_X {0.0, 0.0}
+#define HOTEND_OFFSET_Y {0.0, 0.0}
+#define HOTEND_OFFSET_Z {0.0, 0.0}
 
 // @section machine
 
@@ -866,7 +869,7 @@
 // @section machine
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
-#define INVERT_X_DIR false // set to true for stock drivers or TMC2208 with reversed connectors
+#define INVERT_X_DIR true // set to true for stock drivers or TMC2208 with reversed connectors
 #define INVERT_Y_DIR true // set to false for stock drivers or TMC2208 with reversed connectors
 #define INVERT_Z_DIR true // set to false for stock drivers or TMC2208 with reversed connectors
 
